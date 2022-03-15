@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/SRC/Styles/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <title>Contact | Arch Studio Website Challenge</title>
+</head>
+
+<body>
+  <div class="box">
+    <nav>
+
+      <div class="hero__hangdown">
+        <div class="hero__line"></div>
+        <h3 class="hero__line-text" data-aos="zoom-out">CONTACT
+        </h3>
+      </div>
+      <div class="logo" data-aos="fade-right">
+        <a href="/index.html"><img src="/assets/logo.svg" alt="logo"></a>
+      </div>
+      <button class="hamburger__button">
+        <img src="/assets/icons/icon-hamburger.svg" alt="Open menu" class="hamburger__image open">
+        <img src="/assets/icons/icon-close.svg" alt="Close menu" class="hamburger__image close">
+
+      </button>
+      <ul class="menu" data-aos="fade-right">
+        <li><a href="/SRC/Pages/portfolio.html">Portfolio</a></li>
+        <li><a href="/SRC/Pages/about.html"> About Us </a></li>
+        <li><a href="/SRC/Pages/contact.html">Contact</a></li>
+      </ul>
+
+
+    </nav>
+    <section>
+      <div class="box">
+        <div class="about">
+          <div class="about-image-div" data-aos="fade-right">
+            <div class="about__overlay about__overlay-mobile">
+            </div>
+            <div class="contact-image-desktop"></div>
+            <img src="/assets/contact/mobile/image-hero.jpg" alt="" class="about-image">
+            <img src="/assets/contact/desktop/image-hero.jpg" class="about-image-desktop-img" alt="">
+
+          </div>
+
+          <div class=" about__textbox" data-aos="fade-right">
+            <h1 class="tablet about__heading">Contact
+
+
+            </h1>
+            <h2>Tell us about <br> your project</h2>
+            <p> We’d love to hear more about your project. Please,<br class="tablet-br"> leave a message below
+              <br class="mobile"> or give
+              us a call. We have two<br class="tablet-br"> offices, one in Texas and one in Tennessee. If you find<br
+                class="tablet-br">
+              yourself nearby, come say hello!
+            </p>
+          </div>
+        </div>
+        <div class="heritage" data-aos="zoom-out">
+          <div class="contact">
+            <div class="heritage__textbox contact__textbox">
+              <h2>Contact <br class="tablet-br"> Details
+              </h2>
+            </div>
+
+            <div class="contact__box box1">
+              <div class="contact__info">
+
+                <h4>Main Office</h4>
+                <p>
+                  Mail: <span class="m-left">archone@mail.com</span> <br> </p>
+                <p>
+                  Address : <span class="m-left">1892 Chenoweth Drive TN </span> <br> </p>
+                <p>
+                  Phone :<span class="m-left"> 123-456-3451</span> <br>
+                </p>
+              </div>
+              <div>
+                <p class="view">View on Map <img src="/assets/icons/icon-arrow -black.svg" class=" arrow contact__arrow"
+                    alt="arrow"></p>
+              </div>
+            </div>
+
+            <div class="contact__box box2">
+              <div class="contact__info">
+
+                <h4>Office II
+                </h4>
+                <p> Mail: <span class="m-left">archtwo@mail.com</span> <br> </p>
+                <p> Address: <span class="m-left">3399 Wines Lane TX</span <br> </p>
+                <p> Phone: <span class="m-left">832-123-4321</span> <br> </p>
+                </p>
+              </div>
+              <div>
+                <p class="view view-2">View on Map <img src="/assets/icons/icon-arrow -black.svg"
+                    class=" arrow contact__arrow" alt="arrow"></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="map" data-aos="zoom-out">
+      <div id="mapid"></div>
+    </div>
+
+
+
+    <section>
+      <div class=" connect">
+        <div class="connect__textbox">
+          <h2 data-aos="fade-right">Connect <br class="mobile"><br class="desktop-br">with us</h2>
+        </div>
+        <div class="contact-us__form" data-aos="fade-left">
+          <form id="contact-form">
+            <div class="form-item">
+              <label for="name"></label>
+              <input type="text" id="name" placeholder="Name">
+              <p class="italic">Can't be empty</p>
+            </div>
+
+            <div class="form-item">
+              <label for="email"></label>
+              <input type="email" id="email" placeholder="Email Address">
+              <p class="italic">Email invalid</p>
+            </div>
+
+
+            <div class="form-item">
+              <label for="textarea"></label>
+              <textarea placeholder="Your Message" name="Message" id="message" cols="3" rows="3"></textarea>
+              <p class="italic">Can't be empty</p>
+            </div>
+            <button class="btn connect__btn" id="submit" type="submit" form="contact-form"><img
+                src="/assets/icons/icon-arrow.svg" alt=""></button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section>
+      <div class="footer">
+        <div class="footer__image-div">
+          <img src="/assets/logo - white.svg" alt="">
+        </div>
+        <div>
+          <ul class="footer__list">
+            <li class="">
+              <a class="footer__links footer__links-first " href="/SRC/Pages/portfolio.html"> Portfolio
+              </a>
+            </li>
+            <li>
+              <a class="footer__links" href="/SRC/Pages/about.html"> About Us
+              </a>
+            </li>
+            <li>
+              <a class="footer__links" href="/SRC/Pages/contact.html"> Contact
+              </a>
+            </li>
+          </ul>
+
+          <form method="get" action="/SRC/Pages/portfolio.html">
+            <button type="submit" class="footer__btn btn"> See Our Portfolio <img src="/assets/icons/icon-arrow.svg"
+                class="arrow">
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src=" /app.js"> </script>
+  <script src=" /map.js"> </script>
+
+</body>
+
+</html>
+
+<!-- About Us
+
+Portfolio
+About Us
+Contact
+
+About
+
+
+
+.
+
+The Leaders
+
+
+
+Portfolio
+About Us
+Contact
+
+See Our Portfolio -->
+
+</body>
+
+</html>
+
+<!-- Contact
+
+  Portfolio
+  About Us
+  Contact
+
+  
+
+
+  Contact Details
+
+  Main Office
+
+
+  View on Map
+
+  
+
+  View on Map
+
+  Connect with us
+
+  Name
+  Email
+  Message
+
+
+  Portfolio
+  About Us
+  Contact
+
+  See Our Portfolio
+ -->

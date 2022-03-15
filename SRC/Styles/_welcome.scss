@@ -1,0 +1,15 @@
+.welcome {
+    margin-bottom: 80px;
+}
+
+.welcome__textbox {
+    width: 311px;
+    margin: 0 auto;
+    h2 {
+        color: $black;
+        margin-bottom: 29px;
+    }
+    p {
+        color: $black;
+    }
+}

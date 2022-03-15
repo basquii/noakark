@@ -1,0 +1,95 @@
+nav {
+    height: 96px;
+    display: flex;
+    padding-left: 32px;
+    padding-right: 32px;
+    justify-content: space-between;
+    .hamburger__button {
+        &.shown {
+            .close {
+                display: block;
+            }
+            .open {
+                display: none;
+            }
+        }
+        & .close {
+            display: none;
+        }
+    }
+
+    ul {
+        li {
+            margin-top: 32px;
+        }
+        li:last-child {
+            margin-bottom: 48px;
+        }
+    }
+}
+
+.logo {
+    margin-top: 32px;
+}
+
+.menu {
+    display: none;
+    list-style-type: none;
+    a {
+        font-size: $font-sm;
+        line-height: 25px;
+        color: $black;
+        text-decoration: none;
+        font-weight: $bold;
+    }
+    li:first-child {
+        margin-top: 48px;
+    }
+    li {
+        margin-left: 48px;
+    }
+    a {
+        transition: 0.6s all ease;
+    }
+    a:hover {
+        color: $black;
+    }
+}
+.hamburger {
+    &__image {
+        width: 24px;
+        height: 20px;
+    }
+    &__button {
+        background: none;
+        border: none;
+        height: 20px;
+        margin-top: 35px;
+        margin-right: 24px;
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.show {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 32px;
+    background-color: $very-light-grey;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    z-index: 100;
+    height: 235px;
+    top: 95px;
+}
+
+.hero__hangdown {
+    display: none;
+}
+
+.background_black {
+    background: black !important;
+    color: white !important;
+}

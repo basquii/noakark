@@ -1,0 +1,57 @@
+.featured {
+    width: 311px;
+    margin: 0 auto;
+
+    h2 {
+        margin-bottom: 48px;
+    }
+    h4 {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        color: $white;
+        margin-bottom: 4px;
+    }
+    p {
+        mix-blend-mode: normal;
+        opacity: 0.75;
+    }
+    &__image {
+        margin-bottom: 24px;
+        display: flex;
+    }
+    &__card {
+        position: relative;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    &__textbox {
+        position: absolute;
+        top: 160px;
+        left: 24px;
+    }
+    &__overlay {
+        opacity: 0.4;
+        background-color: black;
+        position: absolute;
+        width: 311px;
+        height: 240px;
+    }
+    &__btn {
+        width: 311px;
+        height: 72px;
+        padding: 0px;
+        text-align: center;
+        font-weight: $bold;
+        margin-bottom: 132px;
+    }
+}
+.featured__image-tablet {
+    display: none;
+}
+
+.work2 {
+    position: relative;
+}
+.featured__h1 {
+    display: none;
+}

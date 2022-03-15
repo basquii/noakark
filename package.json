@@ -1,0 +1,14 @@
+{
+  "name": "arch",
+  "version": "1.0.0",
+  "description": "Front End Mentor Arch Studio Project",
+  "main": "map.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Darwin Basqui Andre",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  }
+}

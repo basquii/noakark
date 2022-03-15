@@ -1,0 +1,79 @@
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: "Spartan", sans-serif;
+    overflow-x: hidden;
+}
+
+*:focus {
+    outline: none;
+}
+
+h1 {
+    font-size: $font-med;
+    line-height: $font-med;
+    letter-spacing: -1.2px;
+    color: $white;
+    font-weight: $bold;
+}
+
+h2 {
+    font-size: $font-normal;
+    line-height: $font-med;
+    letter-spacing: -1.42857px;
+}
+
+p {
+    font-weight: $regular;
+    font-size: $font-xsm;
+    line-height: 25px;
+    color: $white;
+}
+
+.btn {
+    padding: 24px 32px;
+    background: $dark-blue;
+    border: none;
+    color: $white;
+    font-family: Spartan;
+    text-align: right;
+    font-size: $font-xsm;
+    line-height: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.btn:hover {
+    background-color: $grey;
+}
+
+.tablet {
+    display: none;
+}
+
+.desktop {
+    display: none;
+}
+
+.rel {
+    position: absolute;
+    top: 0px;
+}
+.arrow-white {
+    color: $white;
+}
