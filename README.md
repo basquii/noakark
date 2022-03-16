@@ -75,7 +75,7 @@ For future reference, I need to practice how to hide my API key better any feedb
 - [w3schools](https://www.w3schools.com) - This helped me with sorting out some basic arrangements and alignments in css.
 - [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) - This helped me with the flexbox properties.
 - [Dev-Ed Youtube ](https://www.youtube.com/c/DevEd) - This youtube channel clarifies some complex CSS properties I had issues with.
-- [Javascript-Mastery] (https://www.youtube.com/c/JavaScriptMastery) - The best youtube channel to learn the javascript best practices and the best way to learn hard concepts in javascript. 
+- [Javascript-Mastery](https://www.youtube.com/c/JavaScriptMastery) - The best youtube channel to learn the javascript best practices and the best way to learn hard concepts in javascript. 
 
 ## Author
 
